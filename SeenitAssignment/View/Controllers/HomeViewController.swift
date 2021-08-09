@@ -10,8 +10,9 @@ import UIKit
 class HomeViewController: UIViewController  {
 
     @IBOutlet weak var bookListTableView: UITableView!
-    
     private var books = [Book]()
+    private var detailsVC: BookDetailsViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -58,5 +59,18 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate
         }
         cell.bindData(books[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        detailsVC?.book = books[indexPath.row]
+    }
+}
+
+//MARK:-Segue
+extension HomeViewController
+{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "BookDetails", let vc = segue.destination as? BookDetailsViewController
+        { detailsVC = vc }
     }
 }

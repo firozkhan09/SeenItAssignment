@@ -17,6 +17,7 @@
 		0EB431C026C1B8C5001CA07E /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB431BF26C1B8C5001CA07E /* ServiceManager.swift */; };
 		0EB431C326C1B9B9001CA07E /* ServiceConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB431C226C1B9B9001CA07E /* ServiceConstant.swift */; };
 		0EB431C926C1C613001CA07E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB431C826C1C613001CA07E /* Utility.swift */; };
+		0EB431CC26C1C977001CA07E /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB431CB26C1C977001CA07E /* BookDetailsViewController.swift */; };
 		0EDFE9A526C1B4C6006F6F23 /* BookInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFE9A426C1B4C6006F6F23 /* BookInfoTableViewCell.swift */; };
 		3EA5FEBB0002D986BF88BB13 /* Pods_SeenitAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D32581D42A7CD2B0671F876 /* Pods_SeenitAssignment.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		0EB431BF26C1B8C5001CA07E /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		0EB431C226C1B9B9001CA07E /* ServiceConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstant.swift; sourceTree = "<group>"; };
 		0EB431C826C1C613001CA07E /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		0EB431CB26C1C977001CA07E /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
 		0EDFE9A426C1B4C6006F6F23 /* BookInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoTableViewCell.swift; sourceTree = "<group>"; };
 		2400F5890A3CABE3007FF454 /* Pods-SeenitAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeenitAssignment.release.xcconfig"; path = "Target Support Files/Pods-SeenitAssignment/Pods-SeenitAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		5D32581D42A7CD2B0671F876 /* Pods_SeenitAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeenitAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				0E3BE18F26C14B49002BA984 /* HomeViewController.swift */,
+				0EB431CB26C1C977001CA07E /* BookDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				0E3BE19026C14B49002BA984 /* HomeViewController.swift in Sources */,
 				0E3BE18C26C14B49002BA984 /* AppDelegate.swift in Sources */,
 				0EB431BC26C1B80C001CA07E /* Book.swift in Sources */,
+				0EB431CC26C1C977001CA07E /* BookDetailsViewController.swift in Sources */,
 				0EB431C926C1C613001CA07E /* Utility.swift in Sources */,
 				0E3BE18E26C14B49002BA984 /* SceneDelegate.swift in Sources */,
 				0EB431C026C1B8C5001CA07E /* ServiceManager.swift in Sources */,
