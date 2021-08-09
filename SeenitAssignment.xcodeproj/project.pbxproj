@@ -14,6 +14,7 @@
 		0E3BE19526C14B4D002BA984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E3BE19426C14B4D002BA984 /* Assets.xcassets */; };
 		0E3BE19826C14B4D002BA984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3BE19626C14B4D002BA984 /* LaunchScreen.storyboard */; };
 		0EDFE9A526C1B4C6006F6F23 /* BookInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFE9A426C1B4C6006F6F23 /* BookInfoTableViewCell.swift */; };
+		3EA5FEBB0002D986BF88BB13 /* Pods_SeenitAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D32581D42A7CD2B0671F876 /* Pods_SeenitAssignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		0E3BE19726C14B4D002BA984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E3BE19926C14B4D002BA984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EDFE9A426C1B4C6006F6F23 /* BookInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoTableViewCell.swift; sourceTree = "<group>"; };
+		2400F5890A3CABE3007FF454 /* Pods-SeenitAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeenitAssignment.release.xcconfig"; path = "Target Support Files/Pods-SeenitAssignment/Pods-SeenitAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		5D32581D42A7CD2B0671F876 /* Pods_SeenitAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeenitAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCD4FC38DCD62867A533DAA /* Pods-SeenitAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeenitAssignment.debug.xcconfig"; path = "Target Support Files/Pods-SeenitAssignment/Pods-SeenitAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA5FEBB0002D986BF88BB13 /* Pods_SeenitAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				0E3BE18A26C14B49002BA984 /* SeenitAssignment */,
 				0E3BE18926C14B49002BA984 /* Products */,
+				0F8A493B839BD9B685EC90AF /* Pods */,
+				DB18B0B8F246EBA972E96ED4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +101,24 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
+		0F8A493B839BD9B685EC90AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFCD4FC38DCD62867A533DAA /* Pods-SeenitAssignment.debug.xcconfig */,
+				2400F5890A3CABE3007FF454 /* Pods-SeenitAssignment.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB18B0B8F246EBA972E96ED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D32581D42A7CD2B0671F876 /* Pods_SeenitAssignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E3BE19C26C14B4D002BA984 /* Build configuration list for PBXNativeTarget "SeenitAssignment" */;
 			buildPhases = (
+				36DCC7AD5AC5226CC5A11FF4 /* [CP] Check Pods Manifest.lock */,
 				0E3BE18426C14B49002BA984 /* Sources */,
 				0E3BE18526C14B49002BA984 /* Frameworks */,
 				0E3BE18626C14B49002BA984 /* Resources */,
+				0938E4B4087E784302B1BB14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +185,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0938E4B4087E784302B1BB14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeenitAssignment/Pods-SeenitAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeenitAssignment/Pods-SeenitAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeenitAssignment/Pods-SeenitAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36DCC7AD5AC5226CC5A11FF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeenitAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E3BE18426C14B49002BA984 /* Sources */ = {
@@ -311,6 +380,7 @@
 		};
 		0E3BE19D26C14B4D002BA984 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFCD4FC38DCD62867A533DAA /* Pods-SeenitAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,6 +400,7 @@
 		};
 		0E3BE19E26C14B4D002BA984 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2400F5890A3CABE3007FF454 /* Pods-SeenitAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

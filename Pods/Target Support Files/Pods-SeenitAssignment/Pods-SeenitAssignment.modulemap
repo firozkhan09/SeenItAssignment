@@ -1,0 +1,6 @@
+framework module Pods_SeenitAssignment {
+  umbrella header "Pods-SeenitAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
