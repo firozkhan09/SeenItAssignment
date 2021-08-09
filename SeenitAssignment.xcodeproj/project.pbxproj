@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		0E3BE19326C14B49002BA984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3BE19126C14B49002BA984 /* Main.storyboard */; };
 		0E3BE19526C14B4D002BA984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E3BE19426C14B4D002BA984 /* Assets.xcassets */; };
 		0E3BE19826C14B4D002BA984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3BE19626C14B4D002BA984 /* LaunchScreen.storyboard */; };
+		0EB431BC26C1B80C001CA07E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB431BB26C1B80C001CA07E /* Book.swift */; };
 		0EDFE9A526C1B4C6006F6F23 /* BookInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFE9A426C1B4C6006F6F23 /* BookInfoTableViewCell.swift */; };
 		3EA5FEBB0002D986BF88BB13 /* Pods_SeenitAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D32581D42A7CD2B0671F876 /* Pods_SeenitAssignment.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		0E3BE19426C14B4D002BA984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E3BE19726C14B4D002BA984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E3BE19926C14B4D002BA984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EB431BB26C1B80C001CA07E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0EDFE9A426C1B4C6006F6F23 /* BookInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoTableViewCell.swift; sourceTree = "<group>"; };
 		2400F5890A3CABE3007FF454 /* Pods-SeenitAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeenitAssignment.release.xcconfig"; path = "Target Support Files/Pods-SeenitAssignment/Pods-SeenitAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		5D32581D42A7CD2B0671F876 /* Pods_SeenitAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeenitAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,8 @@
 				0E3BE18B26C14B49002BA984 /* AppDelegate.swift */,
 				0E3BE18D26C14B49002BA984 /* SceneDelegate.swift */,
 				0E5B115F26C19CB300309B80 /* View */,
+				0EB431B926C1B7E1001CA07E /* Services */,
+				0EB431BA26C1B7F1001CA07E /* Models */,
 				0E3BE19126C14B49002BA984 /* Main.storyboard */,
 				0E3BE19426C14B4D002BA984 /* Assets.xcassets */,
 				0E3BE19626C14B4D002BA984 /* LaunchScreen.storyboard */,
@@ -83,6 +87,21 @@
 				0EFE7B7826C1A03500C6FD16 /* Controllers */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0EB431B926C1B7E1001CA07E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0EB431BA26C1B7F1001CA07E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0EB431BB26C1B80C001CA07E /* Book.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0EFE7B7826C1A03500C6FD16 /* Controllers */ = {
@@ -107,7 +126,6 @@
 				EFCD4FC38DCD62867A533DAA /* Pods-SeenitAssignment.debug.xcconfig */,
 				2400F5890A3CABE3007FF454 /* Pods-SeenitAssignment.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -236,6 +254,7 @@
 				0EDFE9A526C1B4C6006F6F23 /* BookInfoTableViewCell.swift in Sources */,
 				0E3BE19026C14B49002BA984 /* HomeViewController.swift in Sources */,
 				0E3BE18C26C14B49002BA984 /* AppDelegate.swift in Sources */,
+				0EB431BC26C1B80C001CA07E /* Book.swift in Sources */,
 				0E3BE18E26C14B49002BA984 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
