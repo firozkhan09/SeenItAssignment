@@ -22,3 +22,16 @@ extension UITableView
         self.backgroundView = messageLabel
     }
 }
+
+extension Double
+{
+    func currencyString(forCode code:String) -> String
+    {
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.currencyCode = code
+        currencyFormatter.maximumFractionDigits = 2
+        return currencyFormatter.string(from: NSNumber(value: self)) ?? "\(code) \(self)"
+    }
+}

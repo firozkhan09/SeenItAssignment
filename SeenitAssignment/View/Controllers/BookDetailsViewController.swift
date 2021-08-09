@@ -25,7 +25,7 @@ class BookDetailsViewController: UIViewController {
     {
         name.text = book?.title
         author.text = "Author: \(book?.author ?? "NA")"
-        price.text = "\(book?.currencyCode ?? "") \(String(book?.price ?? 0))/-"
+        price.text = book?.price?.currencyString(forCode: book?.currencyCode ?? "") ?? "NA"
         desc.text = book?.description
     }
 
