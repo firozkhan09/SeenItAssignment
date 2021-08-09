@@ -6,7 +6,8 @@
 //
 
 import Foundation
-struct Book {
+struct Book: Decodable
+{
     var id:Int?
     var title:String?
     var isbn:String?

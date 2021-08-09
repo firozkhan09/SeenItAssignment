@@ -18,5 +18,10 @@ class BookInfoTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    
+    func bindData(_ book:Book)
+    {
+        name.text = book.title
+        author.text = "Author: \(book.author ?? "NA")"
+        price.text = "\(book.currencyCode ?? "") \(String(book.price ?? 0))/-"
+    }
 }
